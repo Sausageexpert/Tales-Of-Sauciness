@@ -3,8 +3,8 @@ import React from 'react';
 import { StyleSheet, Text, View, TouchableOpacity } from 'react-native';
 import {createAppContainer} from 'react-navigation';
 import {createBottomTabNavigator} from 'react-navigation-tabs';
-import OrderScreen from './Screens/OrderScreen';
-import ChooseScreen from './Screens/ChooseScreen';
+import ReadScreen from './Screens/ReadScreen';
+import WriteScreen from './Screens/WriteScreen';
 
 export default class App extends React.Component{
   render(){
@@ -13,8 +13,8 @@ export default class App extends React.Component{
 }
 
 const tabNavigator = createBottomTabNavigator({
-  OrderScreen: {screen: OrderScreen},
-  ChooseScreen: {screen: ChooseScreen}
+  ReadScreen: {screen: ReadScreen},
+  WriteScreen: {screen: WriteScreen}
 });
 
 const AppContainer = createAppContainer(tabNavigator);
